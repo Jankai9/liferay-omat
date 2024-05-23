@@ -33,3 +33,7 @@
 	});
 </aui:script>
 
+<div id="root"></div>
+<!-- React build -->
+<script src="<%=request.getContextPath()%>/build/static/js/main.d5573fc6.js"></script>
+
