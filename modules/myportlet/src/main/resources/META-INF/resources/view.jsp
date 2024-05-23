@@ -4,9 +4,8 @@
 	<b><liferay-ui:message key="my.caption"/></b>
 </p>
 
-
-
-<button id="showThemeDisplayButton">Avaa ThemeDisplay</button>
+<button id="showThemeDisplayButton">Avaa ThemeDisplay JS</button>
+<button id="showThemeDisplayButton2">Avaa ThemeDisplay AUI</button>
 
 <div id="themeDisplayContainer" style="display: none;">
 	<jsp:include page="themeDisplay.jsp" />
@@ -22,3 +21,15 @@
 		}
 	});
 </script>
+
+<aui:script use="aui-base">
+	A.one('#showThemeDisplayButton2').on('click', ()=> {
+		const themeDisplayContainer = A.one('#themeDisplayContainer');
+		if (themeDisplayContainer.getStyle('display') === 'none') {
+			themeDisplayContainer.setStyle('display', 'block');
+		} else {
+			themeDisplayContainer.setStyle('display', 'none');
+		}
+	});
+</aui:script>
+
