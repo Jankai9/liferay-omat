@@ -1,0 +1,36 @@
+# Ignore Gradle build output directory
+build/
+
+# Ignore Gradle project-specific cache directory
+.gradle/
+
+# Ignore Gradle wrapper binary
+gradle-wrapper.jar
+
+# Ignore Node modules directory
+node_modules/
+
+# Ignore the local Liferay home directory
+liferay-ce-portal-7.3.7-ga8/
+
+# Ignore the local Liferay product key
+liferay-developer-studio/
+
+# Ignore IntelliJ IDEA project files
+.idea/
+*.iml
+*.iws
+
+# Ignore Eclipse project files
+.classpath
+.project
+.settings/
+
+# Ignore VS Code project files
+.vscode/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
