@@ -1,2 +1,12 @@
-.myportlet {
+.myportletx p {
+  color: yellowgreen;
+}
+
+.myportletx {
+  background-color: red;
+  margin: 10px;
+  padding: 10px;
+    p {
+      background-color: green;
+    }
 }

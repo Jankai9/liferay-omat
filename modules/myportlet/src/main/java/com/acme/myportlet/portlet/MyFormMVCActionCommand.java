@@ -20,7 +20,7 @@ import javax.portlet.ActionResponse;
 public class MyFormMVCActionCommand extends BaseMVCActionCommand {
 
     @Override
-    protected void doProcessAction(ActionRequest actionRequest, ActionResponse actionResponse) throws Exception {
+    protected void doProcessAction(ActionRequest actionRequest, ActionResponse actionResponse)  {
         String firstName = ParamUtil.getString(actionRequest, "firstName");
 
         _log.info("Käsitellään lomakkeen tiedot");
