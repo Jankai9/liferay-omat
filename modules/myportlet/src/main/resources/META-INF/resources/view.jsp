@@ -4,6 +4,14 @@
 	<b><liferay-ui:message key="my.caption"/></b>
 </p>
 
+<p>
+	<portlet:renderURL var="view2URL">
+		<portlet:param name="mvcPath" value="/reactview.jsp" />
+	</portlet:renderURL>
+	<a href="<%=view2URL%>">Linkki react sivulle </a>
+</p>
+
+
 <button id="showThemeDisplayButton">Avaa ThemeDisplay JS</button>
 <button id="showThemeDisplayButton2">Avaa ThemeDisplay AUI</button>
 
@@ -11,6 +19,7 @@
 	<jsp:include page="themeDisplay.jsp" />
 </div>
 
+<!-- tässä on JS esimerkki -->
 <script>
 	document.getElementById('showThemeDisplayButton').addEventListener('click', function() {
 		var themeDisplayContainer = document.getElementById('themeDisplayContainer');
@@ -22,6 +31,7 @@
 	});
 </script>
 
+<!-- tässä on AUI esimerkki -->
 <aui:script use="aui-base">
 	A.one('#showThemeDisplayButton2').on('click', ()=> {
 		const themeDisplayContainer = A.one('#themeDisplayContainer');
@@ -32,8 +42,3 @@
 		}
 	});
 </aui:script>
-
-<div id="root"></div>
-<!-- React build -->
-<script src="<%=request.getContextPath()%>/build/static/js/main.d5573fc6.js"></script>
-
