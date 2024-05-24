@@ -16,8 +16,13 @@
     <portlet:param name="mvcPath" value="/form.jsp"/>
 </portlet:renderURL>
 
+<portlet:renderURL var="cssStylingURL">
+    <portlet:param name="mvcPath" value="/css-styling.jsp"/>
+</portlet:renderURL>
+
 <ul>
     <li><a href="<%=reactURL%>">React app sivulle </a></li>
     <li><a href="<%=auiURL%>">Aui esimerkki sivulle. + Themedisplay-olion käyttö </a></li>
     <li><a href="<%=formURL%>">Aui form sivulle</a></li>
+    <li><a href="<%=cssStylingURL%>">css sivulle</a></li>
 </ul>
