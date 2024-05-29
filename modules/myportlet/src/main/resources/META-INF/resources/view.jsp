@@ -4,13 +4,13 @@
     <b><liferay-ui:message key="my.caption"/></b>
 </p>
 
-    <portlet:renderURL var="reactURL">
-        <portlet:param name="mvcPath" value="/react-view.jsp"/>
-    </portlet:renderURL>
+<portlet:renderURL var="reactURL">
+    <portlet:param name="mvcPath" value="/react-view.jsp"/>
+</portlet:renderURL>
 
-    <portlet:renderURL var="auiURL">
-        <portlet:param name="mvcPath" value="/aui-view.jsp"/>
-    </portlet:renderURL>
+<portlet:renderURL var="auiURL">
+    <portlet:param name="mvcPath" value="/aui-view.jsp"/>
+</portlet:renderURL>
 
 <portlet:renderURL var="formURL">
     <portlet:param name="mvcPath" value="/form.jsp"/>
